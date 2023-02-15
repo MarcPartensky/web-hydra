@@ -10,6 +10,7 @@ packages = [{include = "web_hydra"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
 
 
 [tool.poetry.group.dev.dependencies]
