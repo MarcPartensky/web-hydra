@@ -1,4 +1,4 @@
 run:
-	uvicorn web-hydra:app
+	poetry run python .
 build:
 	podman compose build
