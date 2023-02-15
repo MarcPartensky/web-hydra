@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 
+import os
+import dotenv
 import uvicorn
 
+from dotenv import load_dotenv
+load_dotenv()
+
 uvicorn.run(
-    "web_hydra:app", port=80, host="0.0.0.0", # reload=True, # reload_dirs=["web-hydra"]
+    "web_hydra:app", port=os.environ["PORT"], host=os.environ["HOST"], # reload=True, # reload_dirs=["web-hydra"]
 )

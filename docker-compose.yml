@@ -3,4 +3,7 @@ services:
   web-hydra:
     image: marcpartensky/web-hydra
     build: .
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8000
 
