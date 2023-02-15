@@ -1,4 +1,3 @@
-FROM nixos/nix
+FROM alpine
 
-RUN nix-env -i python
-RUN nix-env -i hydra
+RUN apk add hydra
