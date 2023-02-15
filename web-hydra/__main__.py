@@ -15,4 +15,3 @@ def index():
 @app.get("/{protocol}/{url}")
 def bruteforce(protocol, str, url: str, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
-
