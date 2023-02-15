@@ -9,6 +9,7 @@ packages = [{include = "web_hydra"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.92.0"
 
 
 [build-system]
