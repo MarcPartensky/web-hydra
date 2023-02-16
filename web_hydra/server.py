@@ -6,6 +6,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+front_folder = "./front/dist"
+
 
 @app.get("/")
 def index():
