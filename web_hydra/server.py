@@ -14,8 +14,6 @@ public_folder = "./front/public"
 
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory=assets_folder), name="assets")
-app.mount("/public", StaticFiles(directory=public_folder), name="public")
-
 
 @app.get("/")
 async def index():
@@ -30,10 +28,34 @@ def bruteforce(protocol: str, url: str, q: Union[str, None] = None):
     return {"protocol": protocol, "url": url, "q": q}
 
 @app.get("/shell")
-def shell(q: Union[str, None] = None):
-    if not q:
+def shell(cmd: Union[str, None] = None):
+    if not cmd:
         raise HTTPException(status_code=404, detail="Incomplete get params.")
-    cmd = q["cmd"]
     words = cmd.split(" ")
+    print(words)
     out = subprocess.run(words, capture_output=True)
     return {"output": out.stdout}
+
+@app.get("/hydra")
+def hydra(protocol: Union[str, None] = None):
+    if not cmd:
+        raise HTTPException(status_code=404, detail="Incomplete get params.")
+    words = cmd.split(" ")
+    print(words)
+
+    out = subprocess.run(["hydra"] + words, capture_output=True)
+    return {"output": out.stdout}
+
+
+def hydra_cmd(protocol: str, interface: str, user_list: str, password_list: str):
+    host, mask = interface.split("/")
+    words = ["hydra"]
+    words.extend(["-U", user_list])
+    words.extend(["-P", password_list])
+    words.extend(host)
+    words.extend(protocol)
+    print("words:", words)
+    out = subprocess.run(words, capture_output=True)
+    print(out)
+    return out
+
