@@ -12,6 +12,7 @@ python = "3.11"
 fastapi = "*"
 uvicorn = "*"
 python-dotenv = "*"
+starlette = "^0.25.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
