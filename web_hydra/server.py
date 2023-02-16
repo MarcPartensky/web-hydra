@@ -9,9 +9,11 @@ from fastapi.staticfiles import StaticFiles
 
 front_folder = "./front/dist"
 assets_folder = "./front/dist/assets"
+public_folder = "./front/public"
 
 app = FastAPI()
 app.mount("/assets", StaticFiles(directory=assets_folder), name="assets")
+app.mount("/public", StaticFiles(directory=public_folder), name="public")
 
 
 @app.get("/")
