@@ -37,7 +37,7 @@ def shell(cmd: Union[str, None] = None):
     return {"output": out.stdout}
 
 @app.get("/hydra")
-def hydra(protocol: Union[str, None] = None):
+def hydra(cmd: Union[str, None] = None):
     if not cmd:
         raise HTTPException(status_code=404, detail="Incomplete get params.")
     words = cmd.split(" ")
@@ -48,14 +48,13 @@ def hydra(protocol: Union[str, None] = None):
 
 
 def hydra_cmd(protocol: str, interface: str, user_list: str, password_list: str):
-    host, mask = interface.split("/")
+    """Run a hydra command nicely."""
     words = ["hydra"]
-    words.extend(["-U", user_list])
+    words.extend(["-L", user_list])
     words.extend(["-P", password_list])
-    words.extend(host)
+    words.extend(interface)
     words.extend(protocol)
     print("words:", words)
     out = subprocess.run(words, capture_output=True)
-    print(out)
+    print("out:", out)
     return out
-
