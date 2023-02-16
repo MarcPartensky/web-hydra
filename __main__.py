@@ -10,7 +10,7 @@ load_dotenv()
 
 uvicorn.run(
     "web_hydra:app",
-    port=os.environ["PORT"],
+    port=int(os.environ["PORT"]),
     host=os.environ["HOST"],
     reload=True,
     reload_dirs=["web-hydra", "front"],
