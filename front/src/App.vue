@@ -9,8 +9,11 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="wrapper">
         <!-- <TextInput :text="Choose url" /> -->
       <input class="e-input" type="text" placeholder="Enter url" />
+      <br>
       <input class="e-input" type="text" placeholder="Enter protocol" />
+      <br>
       <input class="e-input" type="text" placeholder="Enter port" />
+
       <!-- <UrlInput message="url" /> -->
       <!-- <nav> -->
         <!-- <RouterLink to="/">Home</RouterLink> -->
