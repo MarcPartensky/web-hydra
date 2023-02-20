@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-// import { Formulate } from './components/Formulate.vue'
 import DumbButton from './components/DumbButton.vue'
+import HydraForm from './components/HydraForm.vue'
 </script>
 
 <template>
@@ -10,6 +10,8 @@ import DumbButton from './components/DumbButton.vue'
 
     <div class="wrapper">
         <DumbButton />
+        <HydraForm />
+
         <!-- <TextInput :text="Choose url" /> -->
       <!-- <input class="e-input" type="text" placeholder="Enter url" /> -->
       <!-- <br> -->
