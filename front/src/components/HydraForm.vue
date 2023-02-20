@@ -10,7 +10,9 @@
 
 <template>
   <FormKit type="form" @submit="submitHandler">
-    <FormKit type="text" label="Name" name="name" />
-    <FormKit type="email" label="Email" name="email" />
+    <FormKit type="text" label="Protocol" name="protocol" />
+    <FormKit type="text" label="Interface" name="interface" />
+    <FormKit type="number" label="Threads" name="threads" />
+    <FormKit type="text" label="Ports" name="ports" />
   </FormKit>
 </template>
