@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.5.3",
+    "argon-design-system-free": "^1.2.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

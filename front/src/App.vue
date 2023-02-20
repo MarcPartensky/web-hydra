@@ -7,7 +7,7 @@ import HydraForm from './components/HydraForm.vue'
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/hydra.png" width="125" height="125" />
-
+  </header>
     <div class="wrapper">
         <DumbButton />
         <HydraForm />
@@ -36,9 +36,19 @@ import HydraForm from './components/HydraForm.vue'
     <!--     <pre>{{ values }}</pre> -->
     <!--   </FormulateForm> -->
     </div>
-  </header>
 
-  <!-- <RouterView /> -->
+      <!-- <RouterView /> -->
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+
+      <!-- Icons -->
+      <link href="/assets/vendor/nucleo/css/nucleo-icons.css" rel="stylesheet">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+      <!-- Theme CSS -->
+      <link type="text/css" href="/assets/css/argon-design-system.min.css" rel="stylesheet">
+
+  JS
 </template>
 
 <style scoped>
