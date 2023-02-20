@@ -13,6 +13,6 @@
     <FormKit type="text" label="Protocol" name="protocol" />
     <FormKit type="text" label="Interface" name="interface" />
     <FormKit type="number" label="Threads" name="threads" />
-    <FormKit type="text" label="Ports" name="ports" />
+    <FormKit type="number" label="Ports" name="ports" />
   </FormKit>
 </template>

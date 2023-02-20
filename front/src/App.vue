@@ -9,8 +9,10 @@ import HydraForm from './components/HydraForm.vue'
     <img alt="Vue logo" class="logo" src="@/assets/hydra.png" width="125" height="125" />
   </header>
     <div class="wrapper">
+        <center>
         <DumbButton />
-        <HydraForm />
+        <div class="row">
+            <HydraForm />
 
         <!-- <TextInput :text="Choose url" /> -->
       <!-- <input class="e-input" type="text" placeholder="Enter url" /> -->
@@ -35,6 +37,8 @@ import HydraForm from './components/HydraForm.vue'
     <!--     <FormulateInput type="submit" label="Login" /> -->
     <!--     <pre>{{ values }}</pre> -->
     <!--   </FormulateForm> -->
+        </div>
+        </center>
     </div>
 
       <!-- <RouterView /> -->
