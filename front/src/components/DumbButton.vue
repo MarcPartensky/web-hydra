@@ -28,4 +28,3 @@ export default {
 <template>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
-

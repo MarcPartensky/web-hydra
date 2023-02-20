@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 // import { Formulate } from './components/Formulate.vue'
+import DumbButton from './components/DumbButton.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <img alt="Vue logo" class="logo" src="@/assets/hydra.png" width="125" height="125" />
 
     <div class="wrapper">
+        <DumbButton />
         <!-- <TextInput :text="Choose url" /> -->
       <!-- <input class="e-input" type="text" placeholder="Enter url" /> -->
       <!-- <br> -->
