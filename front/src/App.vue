@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+// import { Formulate } from './components/Formulate.vue'
 </script>
 
 <template>
@@ -8,17 +9,28 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <div class="wrapper">
         <!-- <TextInput :text="Choose url" /> -->
-      <input class="e-input" type="text" placeholder="Enter url" />
-      <br>
-      <input class="e-input" type="text" placeholder="Enter protocol" />
-      <br>
-      <input class="e-input" type="text" placeholder="Enter port" />
+      <!-- <input class="e-input" type="text" placeholder="Enter url" /> -->
+      <!-- <br> -->
+      <!-- <input class="e-input" type="text" placeholder="Enter protocol" /> -->
+      <!-- <br> -->
+      <!-- <input class="e-input" type="text" placeholder="Enter port" /> -->
 
       <!-- <UrlInput message="url" /> -->
       <!-- <nav> -->
         <!-- <RouterLink to="/">Home</RouterLink> -->
         <!-- <RouterLink to="/about">About</RouterLink> -->
       <!-- </nav> -->
+    <!-- <FormulateForm -->
+    <!--     v-model="values" -->
+    <!--     @submit="handleLogin" -->
+    <!--   > -->
+    <!--     <h2>Login</h2> -->
+    <!--     <FormulateInput type="text" name="email" label="Email address" validation="required|email" /> -->
+    <!--     <FormulateInput type="text" name="password" label="Password" validation="required" /> -->
+    <!--     <FormulateInput name="terms" type="checkbox" label="I accept, just don't make me read the terms." validation="accepted" /> -->
+    <!--     <FormulateInput type="submit" label="Login" /> -->
+    <!--     <pre>{{ values }}</pre> -->
+    <!--   </FormulateForm> -->
     </div>
   </header>
 
